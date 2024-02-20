@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seekcode</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <style>
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:800px;
+    background: url('https://w.forfun.com/fetch/62/62730ba687dc652c54c753b63b1bc7af.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+  margin-top: 100px;
+}
+h1{
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid whitesmoke;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px ;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
+}
+input:focus~label,
+input:valid~label{
+    top: -3px;
+}
+.inputbox input{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding:0 35px 0 5px;
+    color: whitesmoke; 
+}
+
+.inputbox i{
+  position: absolute;
+  right: 8px;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  top: 20px;  
+}
+.checkbox{
+    margin: 35px 0;
+    font-size: 1rem;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox label{
+    display: flex;
+    align-items: center;
+}
+.checkbox label input{
+    margin-right:3px;
+}
+.checkbox a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+}
+.checkbox a:hover{
+    text-decoration: underline;
+    color:aqua;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+button:hover{
+   background-color:blueviolet; 
+   color: aqua;
+}
+.register{
+    font-size: 0.9rem;
+    color: whitesmoke;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+   </style>
+</head>
+<body>
+   <section>
+    <form>
+        <h1>Login</h1>
+        <div class="inputbox">
+            <i class='bx bxs-envelope' ></i>
+            <input type="email"/>
+            <label for="">Email</label>
+        </div>
+        <div class="inputbox">
+       <i class='bx bxs-lock-alt' ></i>
+            <input type="password" />
+            <label for=""> Password</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox"/>
+          <label for="">Remember Me</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="">Forget Password</a>
+        </div>
+        <div>  <button>Login</button></div>
+        <div class="register">
+            <p>Dont't Have any Account <a href="">Register</a></p>
+        </div>
+      
+    </form>
+   </section>
+</body>
+</html>
